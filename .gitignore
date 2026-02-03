@@ -1,0 +1,14 @@
+# Ambientes virtuais
+venv/
+.env
+
+# Pesos do YOLO (arquivos grandes)
+*.pt
+datasets/
+
+# Resultados de execuções (YOLO cria a pasta runs)
+runs/
+
+# Byte-compiled / Python
+__pycache__/
+*.py[cod]
