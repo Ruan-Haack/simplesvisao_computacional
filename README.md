@@ -7,7 +7,8 @@ Este projeto faz parte da minha trilha de estudos em **Visão Computacional** e 
 * **Framework de IA:** Ultralytics YOLOv8 (Modelo Nano)
 * **Processamento de Imagem:** OpenCV
 * **Ambiente:** Ubuntu Linux (Desenvolvimento focado em performance para CPU)
-* **Dataset:** Oxford-IIIT Pet Dataset (Subconjunto customizado)
+* **Dataset:** Oxford-IIIT Pet Dataset (Subconjunto customizado) 
+* **Link:**    https://universe.roboflow.com/brad-dwyer/oxford-pets/dataset/3
 
 ## 📊 Resultados do Treinamento Supervisionado
 O treinamento foi realizado utilizando a técnica de *Transfer Learning* sobre o modelo pré-treinado `yolov8n.pt`. Com foco em eficiência para hardware embarcado, apliquei as seguintes configurações:
