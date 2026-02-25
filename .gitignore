@@ -1,14 +1,29 @@
-# Ambientes virtuais
-venv/
-.env
-
-# Pesos do YOLO (arquivos grandes)
-*.pt
-datasets/
-
-# Resultados de execuções (YOLO cria a pasta runs)
-runs/
-
-# Byte-compiled / Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Ambientes Virtuais 
+venv/
+env/
+.env
+
+# Dataset
+dataset/
+*.zip
+*.tar.gz
+
+# Resultados do YOLO (Modelos treinados e logs)
+runs/
+*.pt
+*.onnx
+*.engine
+
+# Configurações de IDE
+.vscode/
+.idea/
+
+# Arquivos de log e cache do sistema
+*.log
+*.cache
+.DS_Store
