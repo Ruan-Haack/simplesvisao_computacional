@@ -12,15 +12,19 @@ def treinar():
     
     model = YOLO('yolov8n.pt') 
     #Transfer Learning, onde a IA usa conhecimentos prévios para aprender muito mais rápido.
+    
     model.train(
+    #hyperparameters
     data=data_path,
-    epochs=20,       # vezes que ele vai ler o dataset 
-    imgsz=640,       # resolução das imagens
-    batch=5,         # quantas imagens processa por vez 
-    fraction=0.9,    # porcentagem do dataset
-    name='modelo_pets_v2'
+    epochs=100,       # vezes que ele vai ler o dataset 
+    imgsz=640,        # resolução das imagens
+    batch=5,          # quantas imagens processa por vez 
+    fraction=1.0,     # porcentagem do dataset
+    patience=20,      # 20 épocas sem melhorar, ele para
+    mosaic=1.0,       # focar nos detalhes
+    mixup=0.1,
+    name='modelo_pets_v4'
 )
-
 if __name__ == '__main__':
 
     treinar()
